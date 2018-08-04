@@ -1,4 +1,4 @@
-
+import datetime
 
 class Timeslots():
     maxhours = 24*7
@@ -11,6 +11,7 @@ class Timeslots():
 
     timedef = list(range(maxhalfhours)[0:30])
 class Person:
-    def __init__(self):
+    def __init__(self,name = str):
         self.schedule = Timeslots()
+        self.name = name
 
